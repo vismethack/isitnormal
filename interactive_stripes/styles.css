@@ -1,0 +1,49 @@
+.day {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #today-temp {
+    color: #f7f7f7;
+  }
+  
+  #history .day {
+    width: 12px;
+    margin-right: 2px;
+    flex-shrink: 0;
+  }
+  
+  #average {
+    cursor: pointer;
+  }
+  
+  #history {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.1s;
+  }
+  
+  #history.open {
+    width: 616px;
+    transition: width 0.5s;
+  }
+  
+  #city {
+    font-size: 2em;
+  }
+  
+  #outer {
+    font-family: "Google Sans", sans-serif;
+  }
+  
+  #outer, #historical-days, #comparison {
+    display: flex;
+  }
+  
+  #today, #average {
+    margin-right: 20px;
+  }
